@@ -27,6 +27,18 @@ This project provides a comprehensive approach to handling outliers, scaling dat
 ## Functions
 
 ### 1. Handling Outliers
+def handle_outliers(df, columns, methods):
+    # Function details...
+    
+This function handles outliers in the specified columns of the DataFrame using the following methods:
+- **Winsorization**: Adjusts extreme values to reduce the influence of outliers.
+- **Log Transformation**: Applies logarithmic transformation to reduce skewness.
+- **Clipping**: Clips values outside the 1.5 IQR range.
+
+The best method for each column is selected based on the skewness of the transformed data.
+
+
+### 2. Scaling Data
 def scale_data(df_handled, scaling_method):
     # Function details...
     
